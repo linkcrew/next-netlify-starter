@@ -24,7 +24,7 @@ This project is a very minimal starter that includes 2 sample components, a glob
 First, run the development server:
 
 ```bash
-npm run dev
+npm run dev ※動かなかった場合左記実行後に再実行：npm upgrade
 # or
 yarn dev
 ```
