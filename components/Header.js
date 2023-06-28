@@ -1,3 +1,7 @@
-export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
+export default function Header() {
+  return <header className='w-full mx-auto'>
+    <img
+      src='/LINKCREW-header.png' layout='fill' alt='header' 
+    />
+  </header>
 }
