@@ -5,8 +5,6 @@ import Business from '@components/Business';
 import UserComment from '@components/UserComment';
 import Stack from '@mui/material/Stack';
 
-const COMPANY_NAME = "LINKCREW"
-
 const business_arr = [{
     title: "教育",
     content: `私たちのサロンでは、システム開発活動をしています。\n
@@ -62,28 +60,18 @@ export default function Home() {
         <link rel="icon" href='/LINKCREW-logo.png' />
       </Head>
 
-      <main className='container mx-auto'>
+      <main>
         <Header />
-        {/* <Header title={COMPANY_NAME} /> */}
-        {/* <h2 className='text-left text-5xl m-auto'>事業内容</h2>
-        <div className="text-center grid grid-cols-3 gap-y-4 m-auto">
-          <div className='flex items-center justify-center rounded-lg bg-emerald-500 text-3xl text-white p-4'>教育</div>
-          <div className='flex items-center justify-center col-span-2 rounded-lg bg-emerald-300'>BSDを利用した教育サービスを提供しています。<br />BSDを利用した教育サービスを提供しています。</div>
-          <div className='flex items-center justify-center rounded-lg bg-emerald-500 text-3xl text-white p-4'>開発</div>
-          <div className='flex items-center justify-center col-span-2 rounded-lg bg-emerald-300'>BSDを利用した教育サービスを提供しています。<br />BSDを利用した教育サービスを提供しています。</div>
-          <div className='flex items-center justify-center rounded-lg bg-emerald-500 text-3xl text-white p-4'>支援</div>
-          <div className='flex items-center justify-center col-span-2 rounded-lg bg-emerald-300'>BSDを利用した教育サービスを提供しています。<br />BSDを利用した教育サービスを提供しています。</div>
-        </div> */}
 
         <div></div>
-        <div className="subtitle">
+        <div>
           <h2>事業内容</h2>
         </div>
         {business_arr.map((business, index) => (
           <Business title={business.title} content={business.content} key={index} />
         ))}
 
-        <div className="subtitle-user-comment">
+        <div>
           <h2>利用者・参加者の声</h2>
         </div>
         <Stack direction="row">
@@ -94,7 +82,6 @@ export default function Home() {
       </main>
 
       <Footer />
-      {/* </div> */}
     </div>
   )
 }
