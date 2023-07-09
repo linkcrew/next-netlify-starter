@@ -29,6 +29,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+.position-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  background-color: #9DDAB9;
+  color: #FFF;
+}
+
 .cardtitle {
   border-radius: 10px;
   background: #9DDAB9;

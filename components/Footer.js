@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 export default function Footer() {
   return (
     <>
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id="footer">
         {/* <img src="/logo-netlify.svg" alt="Netlify Logo" className={styles.logo} /> */}
         <p className="mr-8 text-white text-xl">お問い合わせはSNSのDMへ</p>
         <a href="https://www.instagram.com/yuuumi.desu/" className="mr-2">

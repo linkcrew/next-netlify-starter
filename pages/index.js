@@ -64,6 +64,11 @@ export default function Home() {
         <Header />
 
         <div></div>
+        <a href="#footer">
+          <div className='position-bar'>
+            <span>お問い合わせ↓</span>
+          </div>
+        </a>
         <div>
           <h2>事業内容</h2>
         </div>
