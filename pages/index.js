@@ -69,14 +69,14 @@ export default function Home() {
             <span>お問い合わせ↓</span>
           </div>
         </a>
-        <div>
+        <div className='content-title'>
           <h2>事業内容</h2>
         </div>
         {business_arr.map((business, index) => (
           <Business title={business.title} content={business.content} key={index} />
         ))}
 
-        <div>
+        <div className='content-title'>
           <h2>利用者・参加者の声</h2>
         </div>
         <Stack direction="row">

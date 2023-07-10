@@ -48,6 +48,10 @@ h2 {
   left: 5vw;
 }
 
+.content-title {
+  margin: 0.5rem;
+}
+
 .cardtitle {
   border-radius: 10px;
   background: #9DDAB9;
