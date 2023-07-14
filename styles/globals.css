@@ -29,6 +29,29 @@ h2 {
   margin-bottom: 20px;
 }
 
+.position-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  background-color: #9DDAB9;
+  color: #FFF;
+}
+
+.header-message {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  font-size: 1.5rem;/*文字サイズは1.5rem*/
+  letter-spacing: 0.1em;
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  top: 20vh;
+  left: 5vw;
+}
+
+.content-title {
+  margin: 0.5rem;
+}
+
 .cardtitle {
   border-radius: 10px;
   background: #9DDAB9;

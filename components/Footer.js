@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div>
-      <footer className="flex w-full h-full border-t-[1px] border-footer-white border-solid justify-center items-center bg-footer-green">
+      <footer className="flex w-full h-full border-t-[1px] border-footer-white border-solid justify-center items-center bg-footer-green" id="footer">
         <p className="mr-8 text-white text-xl">お問い合わせはSNSのDMへ</p>
         <a href="https://www.instagram.com/yuuumi.desu/" className="mr-2">
           <img src="/Instagram_Glyph_White.svg" alt="Insragram Logo" className="h-[3em] m-[5px]" />
