@@ -8,11 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'footer-white': '#eaeaea',
-        'footer-green': '#9DDAB9'
-      }
+        "footer-white": "#eaeaea",
+        "base-green": "#9DDAB9",
+        "card-detail-green": "#CEF9DC",
+        "base-black": "#333333",
+        "base-gray": "#808080",
+      },
+    },
+    fontFamily: {
+      header: ["Hiragino Kaku Gothic ProN", "メイリオ", "sans-serif"],
     },
   },
   plugins: [],
-}
-
+};

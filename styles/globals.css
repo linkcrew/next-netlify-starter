@@ -2,102 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
-main {
-  padding: 0 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  color: #333;
+.h2 {
+  @apply text-[2rem] font-normal mt-4 mb-4 ml-auto text-base-black;
 }
 
 .content {
-  display: flex;
-  width: 60vw;
-  margin-bottom: 20px;
-}
-
-.position-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 30px;
-  background-color: #9DDAB9;
-  color: #FFF;
-}
-
-.header-message {
-  position: absolute;/*絶対配置*/
-  color: white;/*文字は白に*/
-  font-size: 1.5rem;/*文字サイズは1.5rem*/
-  letter-spacing: 0.1em;
-  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  top: 20vh;
-  left: 5vw;
+  @apply flex w-[60vw] mb-5;
 }
 
 .content-title {
-  margin: 0.5rem;
-}
-
-.cardtitle {
-  border-radius: 10px;
-  background: #9DDAB9;
-  width: 20%;
-}
-
-.cardtitle-content {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  color: #FFF;
-}
-
-.carddetail {
-  background: #CEF9DC;
-  width: 80%;
-}
-
-.carddetail-content {
-  font-size: 0.8rem;
-  padding: 1.0rem;
+  @apply m-2;
 }
 
 .subtitle-user-comment h2 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  color: #808080;
+  @apply text-[2rem] font-normal mb-4 text-base-gray
 }
 
 .content-user-comment {
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
-  margin-bottom: 20px;
-  color: #808080;
+  @apply flex flex-col w-[20vw] mb-5 text-base-gray
 }
 
 .carddetail-user-comment {
-  font-size: 0.8rem;
-  padding: 1.0rem;
+  @apply text-[0.8rem] p-4;
 }
 
 .carddetail-user-comment-name {
-  margin-top: auto;
-  margin-bottom: 0px;
+  @apply mt-auto mb-0;
 }
