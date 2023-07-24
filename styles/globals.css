@@ -15,11 +15,11 @@
 }
 
 .subtitle-user-comment h2 {
-  @apply text-[2rem] font-normal mb-4 text-base-gray
+  @apply text-[2rem] font-normal mb-4 text-base-gray;
 }
 
 .content-user-comment {
-  @apply flex flex-col w-[20vw] mb-5 text-base-gray
+  @apply flex flex-col w-[20vw] mb-5 text-base-gray;
 }
 
 .carddetail-user-comment {
