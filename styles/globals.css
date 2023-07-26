@@ -24,8 +24,14 @@
 
 .carddetail-user-comment {
   @apply text-[0.8rem] p-4;
+  white-space: pre-line;
 }
 
 .carddetail-user-comment-name {
   @apply mt-auto mb-0;
+}
+
+.user-comment-img {
+  @apply w-[8rem] h-[8rem] rounded-full;
+  object-fit: cover;
 }

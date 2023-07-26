@@ -4,7 +4,7 @@ export default function UserComment({ img, content, name }) {
   return (
     <div className="content-user-comment">
       <Typography component="div" className="carddetail-user-comment">
-        <img src={img} />
+        <img src={img} alt={name} className="user-comment-img" />
       </Typography>
       <Typography component="div" className="carddetail-user-comment">
         {content}

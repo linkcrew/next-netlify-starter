@@ -13,7 +13,7 @@ export default function Business({ title, content }) {
         </Typography>
       </Card>
       <Card className="bg-card-detail-green w-4/5">
-        <Typography component="div" className="text-sm p-4">
+        <Typography component="div" className="text-sm p-4 whitespace-pre-line">
           {content}
         </Typography>
       </Card>
