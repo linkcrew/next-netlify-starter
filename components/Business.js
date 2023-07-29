@@ -7,6 +7,7 @@ export default function Business({ title, content }) {
       <div className="rounded-[0px] bg-card-detail-green w-1/5">
         <Typography
           component="div"
+          align="center"
           // className="h-full flex items-center justify-center text-2xl text-white"
           className="h-full flex items-center justify-center text-2xl text-base-gray"
         >
