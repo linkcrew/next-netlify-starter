@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import Business from "@components/Business";
 import UserComment from "@components/UserComment";
 import Stack from "@mui/material/Stack";
+import { ThemeProvider, createTheme } from "@mui/material";
 
 const business_arr = [
   {
@@ -54,49 +55,63 @@ const comment_arr = [
   },
 ];
 
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    }
+  }
+})
+
 export default function Home() {
   return (
-    <div className="box-border">
-      <Head>
-        <title>LINKCREW</title>
-        <link rel="icon" href="/LINKCREW-logo.png" />
-      </Head>
+    <ThemeProvider theme={theme}>
+      <div className="box-border">
+        <Head>
+          <title>LINKCREW</title>
+          <link rel="icon" href="/LINKCREW-logo.png" />
+        </Head>
 
-      <main className="flex p-0 flex-auto flex-col items-center">
-        <Header />
+        <main className="flex p-0 flex-auto flex-col items-center">
+          <Header />
 
-        <a href="#footer">
-          <div className="fixed top-0 right-0 p-[30px] bg-base-green text-white">
-            <span>お問い合わせ↓</span>
+          <a href="#footer">
+            <div className="fixed top-0 right-0 p-[30px] bg-base-green text-white">
+              <span>お問い合わせ↓</span>
+            </div>
+          </a>
+          <div className="m-2">
+            <h2 className="h2">事業内容</h2>
           </div>
-        </a>
-        <div className="m-2">
-          <h2 className="h2">事業内容</h2>
-        </div>
-        {business_arr.map((business, index) => (
-          <Business
-            title={business.title}
-            content={business.content}
-            key={index}
-          />
-        ))}
-
-        <div className="m-2">
-          <h2 className="h2">利用者・参加者の声</h2>
-        </div>
-        <Stack direction="row">
-          {comment_arr.map((comment, index) => (
-            <UserComment
-              img={comment.img}
-              content={comment.content}
-              name={comment.name}
+          {business_arr.map((business, index) => (
+            <Business
+              title={business.title}
+              content={business.content}
               key={index}
             />
           ))}
-        </Stack>
-      </main>
 
-      <Footer />
-    </div>
+          <div className="m-2">
+            <h2 className="h2">利用者・参加者の声</h2>
+          </div>
+          <Stack direction={{ xs:"column", md:"row"}}>
+            {comment_arr.map((comment, index) => (
+              <UserComment
+                img={comment.img}
+                content={comment.content}
+                name={comment.name}
+                key={index}
+              />
+            ))}
+          </Stack>
+        </main>
+
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }

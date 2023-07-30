@@ -19,7 +19,7 @@
 }
 
 .content-user-comment {
-  @apply flex flex-col w-[20vw] mb-5 text-base-gray;
+  @apply flex flex-row w-[60vw] mb-5 text-base-gray md:flex-col md:w-[20vw];
 }
 
 .carddetail-user-comment {
