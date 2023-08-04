@@ -2,10 +2,10 @@ export default function Footer() {
   return (
     <div>
       <footer
-        className="flex w-full h-full border-t-[1px] border-footer-white border-solid justify-center items-center bg-base-green"
+        className="flex flex-row w-full h-full border-t-[1px] border-footer-white border-solid justify-center items-center bg-base-green"
         id="footer"
       >
-        <p className="mr-8 text-white text-xl">お問い合わせはSNSのDMへ</p>
+        <p className="text-white text-xl">お問い合わせはSNSのDMへ</p>
         <a href="https://www.instagram.com/yuuumi.desu/" className="mr-2">
           <img
             src="/Instagram_Glyph_White.svg"

@@ -7,7 +7,7 @@ export default function Header() {
         alt="header"
         className="w-full"
       />
-      <div className="absolute text-white tracking-widest font-header  text-2xl top-[20vw] left-[5vw]">
+      <div className="absolute text-white tracking-widest font-header top-[10vw] text-xs 2xl:text-2xl 2xl:top-[20vw] left-[5vw] xl:top-[18vw] xl:text-xl lg:top-[16vw] lg:text-lg md:top-[14vw] md:text-base sm:top-[12vw] sm:text-sm">
         <p>仕事の垣根を超えて</p>
         <p>つながる大切なエンジニア仲間</p>
       </div>
