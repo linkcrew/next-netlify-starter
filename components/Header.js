@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header className="w-full relative">
       <img
-        src="/LINKCREW-header.jpeg"
+        src="/LINKCREW-header-back-img.jpeg"
         layout="fill"
         alt="header"
         className="w-full"
