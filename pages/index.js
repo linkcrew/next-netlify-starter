@@ -3,6 +3,7 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Business from "@components/Business";
 import UserComment from "@components/UserComment";
+import CompanyProfile from "@components/CompanyProfile";
 import Stack from "@mui/material/Stack";
 import { ThemeProvider, createTheme } from "@mui/material";
 
@@ -72,6 +73,20 @@ const comment_arr = [
     name: "会社員 Rさん"
   }
 ]
+const profile_arr = [
+  {
+    title: "氏名",
+    content: "菅澤一貴"
+  },
+  {
+    title: '電話番号',
+    content: '09061757677'
+  },
+  {
+    title: '住所',
+    content: "東京都中央区銀座1丁目22番11号2F"
+  }
+]
 
 const theme = createTheme({
   breakpoints: {
@@ -126,6 +141,16 @@ export default function Home() {
               />
             ))}
           </Stack>
+
+          <div className="m-2">
+            <h2 className="h2">会社概要</h2>
+          </div>
+          {profile_arr.map((profile, index) => (
+            <CompanyProfile
+                title={profile.title}
+                content={profile.content}
+            />
+          ))}
         </main>
 
         <Footer />

@@ -35,3 +35,10 @@
   @apply w-[8rem] h-[8rem] rounded-full;
   object-fit: cover;
 }
+
+.profile_border {
+  border-bottom: double 2px; 
+}
+.profile_text_center {
+  text-align: center; 
+}
