@@ -75,7 +75,7 @@ const comment_arr = [
 ]
 const profile_arr = [
   {
-    title: "氏名",
+    title: "代表者名",
     content: "菅澤一貴"
   },
   {
