@@ -180,6 +180,7 @@ export default function Home() {
                 title={profile.title}
                 content={profile.content}
                 end={profile.end}
+                key={index}
             />
           ))}
         </main>
