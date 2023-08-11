@@ -18,7 +18,7 @@ export default function CompanyProfile({ title, content, end }) {
       <div className="rounded-[0px] w-full background-:">
         <Typography
           component="div"
-          className="text-sm p-4 text-base-gray profile_text_center">
+          className="text-sm p-4 text-base-gray profile_text_center whitespace-pre-line">
           {content}
         </Typography>
       </div>

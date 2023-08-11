@@ -87,7 +87,7 @@ const profile_arr = [
   },
   {
     title: "設立年月日",
-    content: "2023/08/04",
+    content: "2023年08月04日",
     end: false
   },
   {
@@ -106,8 +106,9 @@ const profile_arr = [
     end: false
   },
   {
-    title: 'お問い合わせ',
-    content: '09061757677',
+    title: '連絡先',
+    content: `電話：090-6175-7677
+    mail：linkcrew.0329@gmail.com`,
     end: false
   },
   {
