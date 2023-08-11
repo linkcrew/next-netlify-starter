@@ -96,7 +96,7 @@ const profile_arr = [
   },
   {
     title: "事業内容",
-    content: "",
+    content: "自社開発・独立支援",
     end: false
   },
   {
@@ -111,7 +111,7 @@ const profile_arr = [
   },
   {
     title: '受付時間',
-    content: '',
+    content: '10:00~18:00',
     end: true
   }
 ]
