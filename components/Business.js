@@ -16,7 +16,7 @@ export default function Business({ title, content }) {
       </div>
       {/* <Card className="rounded-[0px] bg-base-green w-4/5"> */}
       <div className="rounded-[0px] w-full background-: md:w-4/5">
-        <Typography component="div" className="text-sm p-4 text-base-gray">
+        <Typography component="div" className="text-sm p-4 text-base-gray whitespace-pre-line">
           {content}
         </Typography>
       </div>
