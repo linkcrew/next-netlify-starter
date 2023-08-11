@@ -111,7 +111,7 @@ const profile_arr = [
   },
   {
     title: '受付時間',
-    content: '10:00~18:00',
+    content: '平日：9:00~18:00',
     end: true
   }
 ]
