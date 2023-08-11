@@ -75,16 +75,44 @@ const comment_arr = [
 ]
 const profile_arr = [
   {
+    title: "会社名",
+    content: "LiNKCREW",
+    end: false
+  },
+  {
     title: "代表者名",
-    content: "菅澤一貴"
+    content: "菅澤一貴",
+    end: false
   },
   {
-    title: '電話番号',
-    content: '09061757677'
+    title: "設立年月日",
+    content: "2023/08/04",
+    end: false
   },
   {
-    title: '住所',
-    content: "東京都中央区銀座1丁目22番11号2F"
+    title: "資本金",
+    content: "50万円",
+    end: false
+  },
+  {
+    title: "事業内容",
+    content: "",
+    end: false
+  },
+  {
+    title: '所在地',
+    content: "東京都中央区銀座1丁目22番11号2F",
+    end: false
+  },
+  {
+    title: 'お問い合わせ',
+    content: '09061757677',
+    end: false
+  },
+  {
+    title: '受付時間',
+    content: '',
+    end: true
   }
 ]
 
@@ -149,6 +177,7 @@ export default function Home() {
             <CompanyProfile
                 title={profile.title}
                 content={profile.content}
+                end={profile.end}
             />
           ))}
         </main>

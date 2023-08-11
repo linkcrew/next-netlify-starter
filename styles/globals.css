@@ -37,8 +37,15 @@
 }
 
 .profile_border {
-  border-bottom: double 2px; 
+	border-top: solid;
+  border-right: solid;
+	border-left: solid;
 }
+
+.profile_border_bottom {
+	border-bottom: solid;
+}
+
 .profile_text_center {
   text-align: center; 
 }
