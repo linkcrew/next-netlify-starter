@@ -8,21 +8,21 @@ export default function Footer() {
         <p className="text-white text-xl">お問い合わせはSNSのDMへ</p>
         <a href="https://www.instagram.com/yuuumi.desu/" className="mr-2">
           <img
-            src="/Instagram_Glyph_White.svg"
+            src="/Instagram_logo.svg"
             alt="Insragram Logo"
             className="h-[3em] m-[5px]"
           />
         </a>
-        <a href="https://twitter.com/kaaaaaaaazuuuu" className="mr-2">
+        <a href="https://twitter.com/kazutech1" className="mr-2">
           <img
-            src="/twitter_logo_white.svg"
-            alt="Twitter Logo"
+            src="/X_logo.svg"
+            alt="X Logo"
             className="h-[3em] m-[5px]"
           />
         </a>
-        <a href="https://lin.ee/2yYDBhD">
+        <a href="https://lin.ee/2yYDBhD" className="mr-2">
           <img
-            src="/LINE_Brand_icon.png"
+            src="/LINE_logo.png"
             alt="Line Logo"
             className="h-[3em] m-[5px]"
           />
