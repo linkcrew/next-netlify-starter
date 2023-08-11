@@ -173,7 +173,7 @@ export default function Home() {
           </Stack>
 
           <div className="m-2">
-            <h2 className="h1 text-black">会社概要</h2>
+            <h2 className="h1 text-base-gray">会社概要</h2>
           </div>
           {profile_arr.map((profile, index) => (
             <CompanyProfile
