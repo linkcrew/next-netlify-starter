@@ -37,13 +37,13 @@
 }
 
 .profile_border {
-	border-top: solid;
-  border-right: solid;
-	border-left: solid;
+	border-top: solid #808080;
+  border-right: solid #808080;
+	border-left: solid #808080;
 }
 
 .profile_border_bottom {
-	border-bottom: solid;
+	border-bottom: solid #808080;
 }
 
 .profile_text_center {
