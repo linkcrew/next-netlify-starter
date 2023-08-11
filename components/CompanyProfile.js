@@ -10,7 +10,7 @@ export default function CompanyProfile({ title, content, end }) {
         <Typography
           component="div"
           align="center"
-          className="h-full flex items-center justify-center text-sm text-base-gray profile_text_center bg-card-detail-green"
+          className="h-full flex items-center justify-center text-sm text-black profile_text_center bg-card-detail-green"
         >
           {title}
         </Typography>
@@ -18,7 +18,7 @@ export default function CompanyProfile({ title, content, end }) {
       <div className="rounded-[0px] w-full background-:">
         <Typography
           component="div"
-          className="text-sm p-4 text-base-gray profile_text_center whitespace-pre-line">
+          className="text-sm p-4 text-black profile_text_center whitespace-pre-line">
           {content}
         </Typography>
       </div>
