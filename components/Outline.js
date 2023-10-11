@@ -1,4 +1,4 @@
-import { LinkCrewDiv, LinkCrewH2 } from "common";
+import { LinkCrewDiv, LinkCrewH1 } from "common";
 
 export default function Outline() {
   const items = [
@@ -73,10 +73,11 @@ export default function Outline() {
 
   return (
     <div className="flex flex-col gap-y-5 w-full">
+      <LinkCrewH1 title="Outline" />
       {items.map((value, index) => (
         <div key={index} className="card bg-primary">
           <div className="card-body flex flex-row text-center">
-            <LinkCrewH2 title={value.title} className="basis-1/3" />
+            <LinkCrewDiv title={value.title} className="basis-1/3 my-auto" />
             <div className="basis-2/3 my-auto">
               {value.details.map((detailValue, detailIndex) => (
                 <div key={detailIndex}>
