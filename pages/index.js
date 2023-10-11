@@ -77,7 +77,7 @@ const comment_arr = [
 const profile_arr = [
   {
     title: "会社名",
-    content: "LiNKCREW",
+    content: "LiNKCREW株式会社",
     end: false
   },
   {
