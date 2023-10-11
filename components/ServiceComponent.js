@@ -18,7 +18,7 @@ export default function ServiceComponent() {
   ];
 
   return (
-    <div className="flex flex-col gap-x-5 mx-auto">
+    <div className="flex flex-row gap-x-5 mx-auto">
       {items.map((value, index) => (
         <Link key={index} href={"/Service" + value.link}>
           <div className="card bg-primary hover:cursor-pointer">
