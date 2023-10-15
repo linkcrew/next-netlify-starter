@@ -34,16 +34,16 @@ export default function UsersVoiceComponent() {
   return (
     <div className="flex flex-col gap-y-3">
       {items.map((value, index) =>
-        <div>
+        <div key={index}>
           {index % 2 == 0 
-            ? <div key={index} className="flex flex-row gap-x-5">
+            ? <div className="flex flex-row gap-x-5">
                 <div className="flex flex-col my-auto">
                   <div className="text-left">{value.content}</div>
                   <div className="text-right">{value.name}</div>
                 </div>
                 <img src={value.src} className="w-[33.333333%] bg-none"/>
               </div>
-            : <div key={index} className="flex flex-row gap-x-5">
+            : <div className="flex flex-row gap-x-5">
                 <img src={value.src} className="w-[33.333333%] bg-none"/>
                 <div className="flex flex-col my-auto">
                   <div className="text-left">{value.content}</div>
