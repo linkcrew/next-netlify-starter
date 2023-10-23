@@ -37,3 +37,54 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen_content {
+  width: 100vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box, .box::before, .box::after,
+.gizagiza_box_content, .gizagiza_box_content::before{
+  background-color: #94B3AD;
+  width: 800px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gizagiza_box_content p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.box::before{
+  transform: rotate(25deg);
+  content: "";
+  background-color: #94B3AD;
+  z-index: -1;
+}
+
+.box::after{
+  transform: rotate(-16deg);
+  content: "";
+  background-color: #94B3AD;
+  z-index: -1;
+}
