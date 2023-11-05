@@ -1,18 +1,21 @@
 import { LinkCrewH2 } from "common";
+import { services } from "commonConst";
 import Link from "next/link";
+
+const { education, inHouseDev, careerSupport } = services;
 
 export default function ServiceComponent() {
   const items = [
     {
-      title: "開発",
+      title: inHouseDev,
       link: "#開発",
     },
     {
-      title: "教育",
+      title: education,
       link: "#教育",
     },
     {
-      title: "支援",
+      title: careerSupport,
       link: "#支援",
     },
   ];
