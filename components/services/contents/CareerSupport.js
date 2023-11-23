@@ -2,7 +2,7 @@ import { LinkCrewH3 } from "common";
 
 export default function CareerSupport() {
   return (
-    <div class="text-center" aria-label="サービス説明のコンテンツ">
+    <div aria-label="キャリア支援のコンテンツ" className="text-center mt-16">
       <p>仕事の相談やサポート支援活動をしています。</p>
       <br/>
       <LinkCrewH3 title="「残業を減らしたい」"/>

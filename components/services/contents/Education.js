@@ -2,7 +2,7 @@ import { LinkCrewH3 } from "common";
 
 export default function Education() {
   return (
-    <div class="text-center" aria-label="サービス説明のコンテンツ">
+    <div aria-label="教育のコンテンツ" className="text-center mt-16">
       <p>ビギナー向けの学習サポート環境を整備しています。</p><br/>
       <LinkCrewH3 title="「プログラミングの学習手順が分からない」"/>
       <LinkCrewH3 title="「一人だと継続的に学習できない」"/>
