@@ -2,7 +2,7 @@ import { LinkCrewH3 } from "common"
 
 export default function InHouseDev() {
   return (
-    <div class="text-center" aria-label="サービス説明のコンテンツ">
+    <div aria-label="開発のコンテンツ" className="text-center mt-16">
       <p>企画立案〜システム開発まで豊富な実務経験の場を提供しています。</p><br/>
       <p>LiNKCREWでは、開発業務希望者が自己スキル・技術を向上させながら、自身のアイデアを形にできる素晴らしい機会を提供しています。</p>
       <br/>
