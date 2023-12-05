@@ -19,7 +19,7 @@ export default function Career() {
       className: "step-primary",
     },
     {
-      content: "フリーランスエンジニアとしての経験を活かし、LiNKCREWを設立",
+      content: "フリーランスエンジニアとしての経験を活かし、LiNKCREW株式会社を設立",
       className: "step-primary",
     },
     {

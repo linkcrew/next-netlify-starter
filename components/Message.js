@@ -12,7 +12,7 @@ export default function Message() {
     },
     {
       title: "挑戦と創造性",
-      detail: "LiNKCREWでは、新しいアイディアを生み出すためのプレイグラウンドとして捉えています。失敗は成功の一部であり、挑戦を通じて新しい発見や成果を楽しみましょう。",
+      detail: "LiNKCREWは、新しいアイディアを生み出すためのプレイグラウンドとして捉えています。失敗は成功の一部であり、挑戦を通じて新しい発見や成果を楽しみましょう。",
     },
     {
       title: "共感とサポート",
@@ -42,7 +42,7 @@ export default function Message() {
             <LinkCrewDiv title={value.detail} />
           </div>
         ))}
-        <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアにとっての新しいスタート地点であり、一緒に素晴らしい未来を築くための仲間をお待ちしています。" />
+        <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアにとっての新しいスタート地点です。一緒に素晴らしい未来を築くための仲間をお待ちしています。" />
         </div>
       </div>
     </div>
