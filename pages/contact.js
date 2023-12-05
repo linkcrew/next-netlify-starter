@@ -8,7 +8,7 @@ export default function Contact() {
     <div aria-label="ページ全体">
       <main className='mx-auto w-4/5'>
       <Header/>
-        <div className="flex flex-col gap-y-40 text-center" >
+        <div className="flex flex-col gap-y-40" >
           <LinkCrewH1 title="Contact" />
           <ContactComponent />
         </div>
