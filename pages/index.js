@@ -16,8 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
+
       <main className='mx-auto w-4/5'>
-        <Header title="Welcome to my app!" />
         <div className='flex flex-col gap-y-40'>
           <Top />
           <ServiceComponent />

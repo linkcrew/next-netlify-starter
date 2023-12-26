@@ -9,8 +9,9 @@ import Career from '@components/Career'
 export default function Home() {
   return (
     <div>
+      <Header />
+
       <main className='mx-auto w-4/5'>
-        <Header title="Welcome to my app!" />
         <div className='flex flex-col gap-y-40'>
           <About />
           <Service />
