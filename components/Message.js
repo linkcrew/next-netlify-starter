@@ -31,17 +31,19 @@ export default function Message() {
   return (
     <div className="flex flex-col gap-y-5">
       <LinkCrewH1 title="Message" />
-      <div className="flex flex-row gap-x-5 w-full">
-        <img src="/CEOphoto.jpg" className="basis-1/3 w-full h-full my-auto" />
-        <div className="basis-2/3 flex flex-col gap-y-10 my-auto">
+      <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-5">
+        <div className="basis-1/3 my-auto">
+          <img src="/CEOphoto.jpg"/>
+        </div>
+        <div className="flex flex-col gap-y-10 md:basis-2/3 ">
           <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアに対して成長の機会を提供し、新しい可能性を切り拓くお手伝いをすることを使命としています。" />
           <LinkCrewDiv title="私たちのビジョンは、IT業界が全ての才能に開かれ、互いに学び合い、支え合う場所であることです。" />
-        {messageParts.map((value, index) => (
+          {messageParts.map((value, index) => (
           <div key={index}>
             <LinkCrewH3 title={value.title} />
             <LinkCrewDiv title={value.detail} />
           </div>
-        ))}
+          ))}
         <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアにとっての新しいスタート地点です。一緒に素晴らしい未来を築くための仲間をお待ちしています。" />
         </div>
       </div>
