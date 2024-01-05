@@ -1,13 +1,13 @@
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import About from '@components/About'
+import AboutMessage from '@components/AboutMessage'
 import Service from '@components/Service'
 import Outline from '@components/Outline'
 import Message from '@components/Message'
 import Career from '@components/Career'
 import { LinkCrewH1 } from 'common'
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Header />
@@ -15,7 +15,7 @@ export default function Home() {
       <main className='mx-auto w-4/5'>
         <div className='flex flex-col gap-y-40'>
           <LinkCrewH1 title="About" />
-          <About />
+          <AboutMessage />
           <Service />
           <Outline />
           <Message />
