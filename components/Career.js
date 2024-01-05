@@ -3,19 +3,23 @@ import { LinkCrewH1 } from "common";
 export default function Career() {
   const items = [
     {
-      content: "aaa",
+      content: "千葉工業大学 未来ロボティクス学科 卒業",
       className: "step-primary",
     },
     {
-      content: "aaa",
+      content: "2年間三菱重工にて機械設計業務",
       className: "step-primary",
     },
     {
-      content: "aaa",
+      content: "IT業界に転身し、3年間インフラエンジニアとして業務に従事",
       className: "step-primary",
     },
     {
-      content: "aaa",
+      content: "フリーランスエンジニアとして独立",
+      className: "step-primary",
+    },
+    {
+      content: "フリーランスエンジニアとしての経験を活かし、LiNKCREW株式会社を設立",
       className: "step-primary",
     },
     {

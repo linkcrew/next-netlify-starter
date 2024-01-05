@@ -1,6 +1,6 @@
 import { LinkCrewH1, LinkCrewH2, LinkCrewDiv } from "common"
 
-export default function About() {
+export default function AboutMessage() {
   return <div className="flex flex-col gap-y-5 text-center">
     <LinkCrewH1 title="About" />
     <LinkCrewH2 title="仕事の垣根を超えてつながる大切なエンジニア仲間" className="text-left" />
