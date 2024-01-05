@@ -26,7 +26,7 @@ export default function ServicesComponent() {
   return (
     <div className="flex flex-col gap-y-5 text-center">
       <LinkCrewH1 title="Services" />
-      <div className="mt-20" aria-label="サービス一覧のコンテンツ">
+      <div aria-label="サービス一覧のコンテンツ">
         {services.map((service, index) => (
           <Content key={index} title={service.title} service_img_path={service.service_img_path} >
             {service.content}
