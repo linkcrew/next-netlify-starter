@@ -6,8 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 * {
@@ -36,4 +36,23 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* ボタンの位置調整 */
+header > ul > li > a {
+  font-size: 24px;
+}
+.UsersVoiceTitle {
+  font-size: 36px;
+  font-weight: bold;
+  min-height: 33%;
+}
+.UsersVoiceMain {
+  font-size: 36px;
+  font-weight: bold;
+  min-height: 33%;
+}
+
+.UsersVoiceMain {
+  font-size: 24px;
 }

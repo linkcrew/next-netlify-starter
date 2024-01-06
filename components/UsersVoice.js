@@ -4,7 +4,7 @@ import UsersVoiceComponent from "./UsersVoiceComponent";
 export default function UsersVoice() {
   return (
     <div className="flex flex-col gap-y-5">
-      <LinkCrewDiv title="利用者の声" className="text-left" />
+      <LinkCrewDiv title="利用者の声" className="text-center text-4xl" />
       <UsersVoiceComponent />
     </div>
   );

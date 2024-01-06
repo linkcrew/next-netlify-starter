@@ -24,7 +24,7 @@ export default function ServiceComponent() {
     <div className="flex flex-row gap-x-5 mx-auto">
       {items.map((value, index) => (
         <Link key={index} href={"/Service" + value.link}>
-          <div className="card bg-primary hover:cursor-pointer">
+          <div className="c-btn grad bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 rounded-md">
             <div className="card-body text-center">
               <LinkCrewH2 title={value.title} className="card-title mx-auto" />
             </div>
