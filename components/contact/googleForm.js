@@ -24,7 +24,7 @@ export default function ContactGoogleForm() {
     }
 
     e.target.submit();
-    router.push('/contact/thanks')
+    router.push('/contact_thanks')
   }
 
   return (
