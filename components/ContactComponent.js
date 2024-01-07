@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { IconBrandLine } from "@components/common/Icon";
-import ContactGoogleForm from "@components/contact/googleForm";
+import ContactGoogleForm from "@components/contact/GoogleForm";
 import { LinkCrewDiv } from "common";
 
 export default function ContactComponent() {
