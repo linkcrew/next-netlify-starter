@@ -24,8 +24,12 @@ export default function Home() {
           <ServiceComponent />
           <UsersVoice />
           <News />
-          <Link href="/contact" title="お問い合わせはこちら">
-            お問い合わせはこちら
+          <Link
+            href="/contact"
+            title="CLICK HERE!"
+            className="text-center text-4xl click-here"
+          >
+            CLICK HERE!
           </Link>
         </div>
       </main>

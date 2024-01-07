@@ -37,8 +37,15 @@ code {
   justify-content: center;
   align-items: center;
 }
+.title-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.title-comment {
+  line-height: 1.7;
+  font-size: 16px;
+}
 
-/* ボタンの位置調整 */
 header > ul > li > a {
   font-size: 24px;
 }
@@ -48,11 +55,12 @@ header > ul > li > a {
   min-height: 33%;
 }
 .UsersVoiceMain {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   min-height: 33%;
 }
 
-.UsersVoiceMain {
-  font-size: 24px;
+/* tailwind.css or your custom stylesheet */
+.click-here:hover {
+  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
 }
