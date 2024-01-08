@@ -152,7 +152,7 @@ export default function ContactGoogleForm() {
             />
           </div>
         </div>
-        <div className="mb-20">
+        <div className="mb-20 text-center">
           <button 
             type="submit"
             className="btn btn-primary"

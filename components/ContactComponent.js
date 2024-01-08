@@ -5,7 +5,7 @@ import { LinkCrewDiv } from "common";
 
 export default function ContactComponent() {
   return (
-    <div className="flex flex-col gap-y-5 text-center items-center">
+    <div className="flex flex-col gap-y-5 items-center">
       <LinkCrewDiv title="弊社へのお問い合わせは公式LINEまたは下記のフォームよりお願いいたします。" />
       <LinkCrewDiv title="（公式LINEのご登録はこちらから）" className="mt-10"/>
       <Link href="https://lin.ee/YEKMoqp" className="w-20 h-20 mb-10 hover:cursor-pointer" target="_blank">
