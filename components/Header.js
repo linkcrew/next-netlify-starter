@@ -2,7 +2,7 @@ import { FaLine, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-between bg-gray-800 text-white p-4 h-20">
+    <header className="w-full flex justify-between bg-gray-800 text-white p-4 h-20">
       {/* コーポレートロゴ */}
       <nav className="flex items-center h-full">
         <a href="/" className="flex items-center h-full hover:text-gray-300">
