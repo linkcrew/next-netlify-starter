@@ -7,8 +7,16 @@ import UsersVoice from '@components/UsersVoice'
 import News from '@components/News'
 import { LinkCrewH1 } from 'common'
 import Link from 'next/link'
+import SideMenu from '@components/SideMenu'
+import React, { useState } from 'react';
 
 export default function Home() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+  
   return (
     <div>
       <Head>
@@ -16,7 +24,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header toggleDrawer={toggleDrawer} />
+
+      <SideMenu isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />
 
       <main className='mx-auto w-4/5'>
         <div className='flex flex-col gap-y-40'>
