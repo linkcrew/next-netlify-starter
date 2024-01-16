@@ -53,9 +53,6 @@ export default function SideMenu({ isOpen, setIsOpen }) {
               <FaInstagram size={20} color={'#ccc'} />
             </a>
           </li>
-          <li className="mb-2">
-            <a href="/privacy" onClick={() => setIsOpen(false)}>プライバシーポリシー</a>
-          </li>
         </ul>
       </div>
     </>
