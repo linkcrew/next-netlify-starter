@@ -7,17 +7,17 @@ import CareerSupport from '@components/services/contents/CareerSupport';
 const services = [
   {
     title: "教育",
-    service_img_path: "/service1.png",
+    service_img_path: "/service_education.jpg",
     content: <Education />
   },
   {
     title: "開発",
-    service_img_path: "/service1.png",
+    service_img_path: "/service_development.jpg",
     content: <InHouseDev />
   },
   {
     title: "キャリア支援",
-    service_img_path: "/service1.png",
+    service_img_path: "/service_career.jpg",
     content: <CareerSupport />
   },
 ]
