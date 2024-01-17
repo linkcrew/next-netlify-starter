@@ -1,6 +1,7 @@
-import { FaLine, FaXTwitter, FaInstagram } from "react-icons/fa6"
+import { FaBars, FaLine, FaXTwitter, FaInstagram } from "react-icons/fa6"
+import React from 'react';
 
-export default function Header() {
+export default function Header({ toggleDrawer }) {
   return (
     <header className="flex justify-between bg-gray-800 text-white p-4 h-20">
       {/* コーポレートロゴ */}
@@ -9,8 +10,9 @@ export default function Header() {
           <img src="corporate_logo.svg" width="30px" height="30px"></img>
         </a>
       </nav>
+
       {/*　ナビゲーションリンク */}
-      <ul className="flex items-center h-full">
+      <ul className="hidden md:flex items-center h-full">
         <li className="ml-6">
           <a href="/about" className="hover:text-gray-300">about</a>
         </li>
@@ -36,6 +38,14 @@ export default function Header() {
           </a>
         </li>
       </ul>
+
+      {/* ハンバーガーアイコン */}
+      <button
+        className="p-2 md:hidden"
+        onClick={toggleDrawer}
+      >
+        <FaBars size={30} color={'#ccc'} />
+      </button>
     </header >
   )
 }

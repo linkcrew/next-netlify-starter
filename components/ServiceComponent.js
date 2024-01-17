@@ -23,7 +23,7 @@ export default function ServiceComponent() {
   return (
     <div className="flex flex-row gap-x-5 mx-auto">
       {items.map((value, index) => (
-        <Link key={index} href={"/Service" + value.link}>
+        <Link key={index} href={"/services" + value.link}>
           <div className="card bg-primary hover:cursor-pointer">
             <div className="card-body text-center">
               <LinkCrewH2 title={value.title} className="card-title mx-auto" />

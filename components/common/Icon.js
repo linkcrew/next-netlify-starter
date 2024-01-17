@@ -1,5 +1,5 @@
 export function IconBrandLine(props) {
   return (
-    <img src="/lineIcon.png" alt="公式LINE" className={props.className} />
+    <img src="/line_icon.png" alt="公式LINE" className={props.className} />
   )
 }
