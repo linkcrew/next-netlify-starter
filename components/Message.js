@@ -1,4 +1,4 @@
-import { LinkCrewDiv, LinkCrewH1, LinkCrewH3 } from "common";
+import { LinkCrewDiv, LinkCrewH2, LinkCrewH3 } from "common";
 
 export default function Message() {
   const messageParts = [
@@ -30,7 +30,7 @@ export default function Message() {
 
   return (
     <div className="flex flex-col gap-y-5">
-      <LinkCrewH1 title="CEOメッセージ" />
+      <LinkCrewH2 title="CEOメッセージ" className="text-center mb-10"/>
       <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアに対して成長の機会を提供し、新しい可能性を切り拓くお手伝いをすることを使命としています。" />
       <LinkCrewDiv title="私たちのビジョンは、IT業界が全ての才能に開かれ、互いに学び合い、支え合う場所であることです。" />
       <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-5 mt-10 mb-20">

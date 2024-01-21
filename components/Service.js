@@ -1,9 +1,9 @@
-import { LinkCrewH1 } from "common"
+import { LinkCrewH2 } from "common"
 import ServiceComponent from "./ServiceComponent"
 
 export default function Service() {
   return <div className="flex flex-col gap-y-5 text-center">
-    <LinkCrewH1 title="サービス" />
+    <LinkCrewH2 title="サービス" className="mb-10"/>
     <ServiceComponent />
   </div>
 }
