@@ -33,10 +33,6 @@ export default function Home() {
           <Top />
           <ServiceComponent />
           <UsersVoice />
-          <News />
-          <Link href="/ContactUs">
-            <LinkCrewH1 title="Contact Us" className="text-center hover:cursor-pointer" />
-          </Link>
         </div>
       </main>
 
