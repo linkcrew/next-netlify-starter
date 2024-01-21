@@ -73,7 +73,7 @@ export default function Outline() {
 
   return (
     <div className="flex flex-col gap-y-5 w-full">
-      <LinkCrewH1 title="Outline" />
+      <LinkCrewH1 title="会社概要" />
       {items.map((value, index) => (
         <div key={index} className="card bg-primary">
           <div className="card-body flex flex-row text-center">

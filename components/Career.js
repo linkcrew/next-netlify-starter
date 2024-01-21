@@ -30,7 +30,7 @@ export default function Career() {
 
   return (
     <div className="flex flex-col gap-y-5">
-      <LinkCrewH1 title="CEO Career" />
+      <LinkCrewH1 title="CEOキャリア" />
       <ul className="steps steps-vertical mx-auto">
         {items.map((value, index) => (
           <li key={index} className={"step " + value.className}>{value.content}</li>
