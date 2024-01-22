@@ -29,29 +29,30 @@ export default function SideMenu({ isOpen, setIsOpen }) {
         </button>
 
         <ul className="flex flex-col p-4">
-          <li className="mb-2">
+          <li className="mb-2 text-xl size-8">
+            <a href="/" onClick={() => setIsOpen(false)}>top</a>
+          </li>
+          <li className="mb-2 text-xl size-8">
             <a href="/about" onClick={() => setIsOpen(false)}>about</a>
           </li>
-          <li className="mb-2">
+          <li className="mb-2 text-xl size-8">
             <a href="/services" onClick={() => setIsOpen(false)}>services</a>
           </li>
-          <li className="mb-2">
+          <li className="mb-2 text-xl size-8">
             <a href="/contact" onClick={() => setIsOpen(false)}>contact</a>
           </li>
-          <li className="mb-2">
-            <a href="https://lin.ee/YEKMoqp" target="_blank" rel="noopener noreferrer">
-              <FaLine size={20} color={'#ccc'} />
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="https://twitter.com/kazutech1" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter size={20} color={'#ccc'} />
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="https://www.instagram.com/yuuumi.desu" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={20} color={'#ccc'} />
-            </a>
+          <li className="mb-2 text-xl size-8">
+            <div className="flex flex-row gap-x-2">
+              <a href="https://lin.ee/YEKMoqp" target="_blank" rel="noopener noreferrer">
+                <FaLine size={30} color={'#ccc'} />
+              </a>
+              <a href="https://twitter.com/kazutech1" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter size={30} color={'#ccc'} />
+              </a>
+              <a href="https://www.instagram.com/yuuumi.desu" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={30} color={'#ccc'} />
+              </a>
+            </div>
           </li>
         </ul>
       </div>
