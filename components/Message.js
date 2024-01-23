@@ -40,7 +40,7 @@ export default function Message() {
         <div className="flex flex-col gap-y-10 md:basis-2/3 ">
           {messageParts.map((value, index) => (
           <div key={index}>
-            <LinkCrewH3 title={value.title} />
+            <LinkCrewH3 title={value.title} className="text-center" />
             <LinkCrewDiv title={value.detail} />
           </div>
           ))}

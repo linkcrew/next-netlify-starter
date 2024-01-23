@@ -2,11 +2,8 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Top from '@components/Top'
-import ServiceComponent from '@components/ServiceComponent'
+import Service from '@components/Service'
 import UsersVoice from '@components/UsersVoice'
-import News from '@components/News'
-import { LinkCrewH1 } from 'common'
-import Link from 'next/link'
 import SideMenu from '@components/SideMenu'
 import React, { useState } from 'react';
 
@@ -31,7 +28,7 @@ export default function Home() {
       <main className='mx-auto w-4/5'>
         <div className='flex flex-col gap-y-40'>
           <Top />
-          <ServiceComponent />
+          <Service />
           <UsersVoice />
         </div>
       </main>

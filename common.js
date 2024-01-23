@@ -7,7 +7,7 @@ export function LinkCrewH2(props) {
 }
 
 export function LinkCrewH3(props) {
-  return <div key={props.key} className={"text-base text-center md:text-xl lg:text-2xl xl:text-4xl " + props.className}>{props.title}</div>
+  return <div key={props.key} className={"text-base md:text-xl lg:text-2xl xl:text-4xl " + props.className}>{props.title}</div>
 }
 
 export function LinkCrewDiv(props) {
