@@ -1,4 +1,4 @@
-import { LinkCrewDiv, LinkCrewH2 } from "common";
+import { LinkCrewDiv, LinkCrewH3 } from "common";
 
 export default function UsersVoiceComponent() {
   const items = [
@@ -44,7 +44,7 @@ export default function UsersVoiceComponent() {
             ? <div className="flex flex-col gap-x-5 md:flex-row">
                 <img src={value.src} className="w-[100%] md:w-[0%] bg-none"/>
                 <div className="flex flex-col basis-4/5 my-auto">
-                  <LinkCrewH2 title={value.title} className="text-left" />
+                  <LinkCrewH3 title={value.title} className="text-left" />
                   <br />
                   <LinkCrewDiv title={value.content} className="text-left" />
                   <LinkCrewDiv title={value.name} className="text-right" />
@@ -58,7 +58,7 @@ export default function UsersVoiceComponent() {
                   <img src={value.src} className="bg-none"/>
                 </div>
                 <div className="flex flex-col basis-4/5 my-auto">
-                  <LinkCrewH2 title={value.title} className="text-left" />
+                  <LinkCrewH3 title={value.title} className="text-left" />
                   <br />
                   <LinkCrewDiv title={value.content} className="text-left" />
                   <LinkCrewDiv title={value.name} className="text-right" />
