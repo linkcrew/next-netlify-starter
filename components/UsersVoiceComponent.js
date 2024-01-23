@@ -42,7 +42,7 @@ export default function UsersVoiceComponent() {
         <div key={index}>
           {index % 2 == 0 
             ? <div className="flex flex-col gap-x-5 md:flex-row">
-                <img src={value.src} className="w-[100%] md:w-[0%] bg-none"/>
+                <img src={value.src} className="w-[100%] md:w-[0%] bg-none border-4 md:border-0 border-gray-300"/>
                 <div className="flex flex-col basis-4/5 my-auto">
                   <LinkCrewH3 title={value.title} className="text-left" />
                   <br />
@@ -50,12 +50,12 @@ export default function UsersVoiceComponent() {
                   <LinkCrewDiv title={value.name} className="text-right" />
                 </div>
                 <div className="w-[0%] md:basis-1/5 my-auto">
-                  <img src={value.src} className="bg-none"/>
+                  <img src={value.src} className="bg-none border-4 border-gray-300"/>
                 </div>
               </div>
             : <div className="flex flex-col gap-x-5 md:flex-row">
                 <div className="w-[100%] md:basis-1/5 my-auto">
-                  <img src={value.src} className="bg-none"/>
+                  <img src={value.src} className="bg-none border-4 border-gray-300"/>
                 </div>
                 <div className="flex flex-col basis-4/5 my-auto">
                   <LinkCrewH3 title={value.title} className="text-left" />
