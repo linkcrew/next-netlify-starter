@@ -50,7 +50,7 @@ export default function UsersVoiceComponent() {
                   <LinkCrewDiv title={value.name} className="text-right" />
                 </div>
                 <div className="w-[0%] md:basis-1/5 my-auto">
-                  <img src={value.src} className="bg-none border-4 border-gray-300"/>
+                  <img src={value.src} className="bg-none border-0 md:placeholder:border-4 border-gray-300"/>
                 </div>
               </div>
             : <div className="flex flex-col gap-x-5 md:flex-row">
