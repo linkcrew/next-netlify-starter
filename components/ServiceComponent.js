@@ -16,7 +16,7 @@ export default function ServiceComponent() {
     },
     {
       title: careerSupport,
-      link: "#支援",
+      link: "#キャリア支援",
     },
   ];
 
