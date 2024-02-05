@@ -39,7 +39,7 @@ export default function UsersVoiceComponent() {
   return (
     <div className="flex flex-col gap-y-5">
       {items.map((value, index) =>
-        <div key={index}>
+        <div key={index} className="m-5">
           {index % 2 == 0 
             ? <div className="flex flex-col gap-x-5 md:flex-row">
                 <img src={value.src} className="w-[100%] md:w-[0%] bg-none border-4 md:border-0 border-gray-300"/>

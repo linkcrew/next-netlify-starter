@@ -5,23 +5,35 @@ export default function ContactGoogleForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
-    if (!e.target[0].value) {
-      alert('氏名を入力してください')
-      return
-    }
-    if (!e.target[2].value) {
-      alert('メールアドレスを入力してください')
-      return
-    }
-    if ( !e.target[3].checked && !e.target[4].checked && !e.target[5].checked && !e.target[6].checked && !e.target[7].checked) {
-      alert('お問い合わせ項目を選択してください')
-      return
-    }
-    if (!e.target[8].value) {
-      alert('お問い合わせ内容を入力してください')
-      return
-    }
+    const form = document.getElementById('form');
+    const inputElms = form.querySelectorAll('input');
+    
+    form.addEventListener(
+      'submit',
+      (e) => {
+        e.preventDefault();
+        inputElms.forEach((input) => {
+          const label = input.closest('label');
+          label.classList.remove('is-error');
+          const errorMessage = label.nextElementSibling;
+          errorMessage.textContent = '';
+        });
+        const isValid = form.checkValidity();
+        if (isValid) {
+          alert('submit!');
+        }
+      },
+      { passive: false }
+    );
+    inputElms.forEach((input) => {
+      input.addEventListener('invalid', (e) => {
+        const currentTarget = e.currentTarget;
+        const label = currentTarget.closest('label');
+        label.classList.add('is-error');
+        const errorMessage = label.nextElementSibling;
+        errorMessage.textContent = currentTarget.validationMessage;
+      });
+    }); 
 
     e.target.submit();
     router.push('/contact_thanks')
@@ -30,67 +42,63 @@ export default function ContactGoogleForm() {
   return (
     <div className="w-full mt-10">
       <form 
+        id='form'
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrjcNaG7TGt6A_5IAadRql_tI1nsnukF9GYcKInZTjFwjG9Q/formResponse?embedded=true"
         method="POST"
         target="hidden_iframe"
         onSubmit={handleSubmit}
       >
-        <div className="md:flex mb-20">
-          <div className="md:w-1/3">
-            <div className="div">
+        <div className="mb-20">
+          <label className='md:flex'>
+            <span className="w-full">
               氏名
               <div className="input-div-with-helper-text mr-5 text-red-600 text-sm">※必須</div>
-            </div>
-          </div>
-          <div className="md:w-full">
-            <input
-              name="entry.1780721743"
-              type="text"
-              placeholder="山田太郎"
-              className="input input-bordered w-full"
-            />
-          </div>
+            </span>
+            <input 
+            name="entry.1780721743"
+            type="text" 
+            id="input" 
+            placeholder="山田太郎"
+            className="input input-bordered w-full"
+            required />
+          </label>
+          <span class="errorMessage"></span>
         </div>
-        <div className="md:flex mb-20">
-          <div className="md:w-1/3">
-            <div className="div">
-              会社名（任意）
-            </div>
-          </div>
-          <div className="md:w-full">
+        <div className="mb-20">
+          <label className='md:flex'>
+            <span className="w-full">会社名（任意）</span>
             <input
               name="entry.1033311784"
               type="text"
               placeholder="LiNKCREW株式会社"
               className="input input-bordered w-full"
-            />
-          </div>
+              id="input" />
+          </label>
         </div>
-        <div className="md:flex mb-20">
-          <div className="md:w-1/3">
-            <div className="div">
+        <div className="mb-20">
+          <label className='md:flex'>
+            <span className="w-full">
               メールアドレス
               <div className="input-div-with-helper-text mr-5 text-red-600 text-sm">※必須</div>
-            </div>
-          </div>
-          <div className="md:w-full">
+            </span>
             <input
               name="entry.548612249"
               type="text"
               placeholder="example@linkcrew.net"
               className="input input-bordered w-full"
-            />
-          </div>
+              id="input" 
+              required />
+          </label>
+          <span class="errorMessage"></span>
         </div>
-        <div className="md:flex mb-20">
-          <div className="md:w-1/3">
-            <div className="div">
+        <div className="mb-20">
+          <label className='md:flex'>
+            <span className="w-full">
               お問い合わせ項目
               <div className="input-div-with-helper-text mr-5 text-red-600 text-sm">※必須</div>
-            </div>
-          </div>
-          <div className="md:w-full">
-            <div className="md:flex">
+            </span>
+            <div className="md:w-full">
+            <div>
               <input
                 name="entry.1501464539"
                 type="checkbox"
@@ -99,7 +107,7 @@ export default function ContactGoogleForm() {
               />
               教育事業
             </div>
-            <div className="md:flex">
+            <div>
               <input
                 name="entry.1501464539"
                 type="checkbox"
@@ -108,7 +116,7 @@ export default function ContactGoogleForm() {
               />
               開発事業
             </div>
-            <div className="md:flex">
+            <div>
               <input
                 name="entry.1501464539"
                 type="checkbox"
@@ -117,7 +125,7 @@ export default function ContactGoogleForm() {
               />
               キャリア支援事業
               </div>
-            <div className="md:flex">
+            <div>
               <input
                 name="entry.1501464539"
                 type="checkbox"
@@ -126,7 +134,7 @@ export default function ContactGoogleForm() {
               />
               個人情報に関するもの
             </div>
-            <div className="md:flex">
+            <div>
               <input
                 name="entry.1501464539"
                 type="checkbox"
@@ -135,22 +143,24 @@ export default function ContactGoogleForm() {
               />
               その他
             </div>
-          </div>
+          </div> 
+          </label>
+          <span class="errorMessage"></span>
         </div>
-        <div className="md:flex mb-20">
-          <div className="md:w-1/3">
-            <div className="div">
+        <div className="mb-20">
+          <label className='md:flex'>
+            <span className="w-full">
               お問い合わせ内容
               <div className="input-div-with-helper-text mr-5 text-red-600 text-sm">※必須</div>
-            </div>
-          </div>
-          <div className="md:w-full">
+            </span>
             <textarea
               name="entry.1603705982"
               className="input input-bordered w-full h-fit"
               rows="5"
+              type="text" id="input" required
             />
-          </div>
+          </label>
+          <span class="errorMessage"></span>
         </div>
         <div className="mb-20 text-center">
           <button 

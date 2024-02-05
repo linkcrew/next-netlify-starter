@@ -4,7 +4,7 @@ export default function Top() {
   return (
     <div className="">
       <div>
-        <img src="/corporate_header.svg" className="mx-auto my-auto" />
+        <img src="/corporate_header.svg" className="mx-auto my-auto mb-10" />
         <LinkCrewH3 title="いつでも相談できる環境がある" className="text-center" />
         <LinkCrewH3 title="いつでも参加できる集まりがある" className="text-center" />
         <LinkCrewH3 title="いつでも教えてくれる仲間がいる" className="text-center" />
