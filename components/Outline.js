@@ -69,11 +69,19 @@ export default function Outline() {
         },
       ],
     },
+    {
+      title: "会社名",
+      details: [
+        {
+          detail: "LiNKCREW株式会社",
+        },
+      ],
+    },
   ];
 
   return (
     <div className="flex flex-col gap-y-5 w-full text-center">
-      <LinkCrewH2 title="会社概要" className="mb-10"/>
+      <LinkCrewH2 title="会社概要" className="mb-10" />
       {items.map((value, index) => (
         <div key={index} className="card bg-primary">
           <div className="card-body flex flex-row">
@@ -89,5 +97,5 @@ export default function Outline() {
         </div>
       ))}
     </div>
-  )
+  );
 }
