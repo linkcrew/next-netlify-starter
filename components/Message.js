@@ -30,7 +30,7 @@ export default function Message() {
 
   return (
     <div className="flex flex-col gap-y-5">
-      <LinkCrewH2 title="菅澤一貴からのメッセージ" className="text-center mb-10"/>
+      <LinkCrewH2 title="代表メッセージ" className="text-center mb-10"/>
       <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアに対して成長の機会を提供し、新しい可能性を切り拓くお手伝いをすることを使命としています。" />
       <LinkCrewDiv title="私たちの目指すビジョンは、IT業界が全ての才能を開花し、互いに学び合い、支え合う場所となることです。" />
       <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-5 mt-10 mb-20">
