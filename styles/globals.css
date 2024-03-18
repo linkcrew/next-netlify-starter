@@ -41,3 +41,7 @@ code {
 .header-index {
   z-index: 99;
 }
+
+.img-font {
+  font-size: 15px;
+}

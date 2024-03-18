@@ -36,6 +36,7 @@ export default function Message() {
       <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-5 mt-10 mb-20">
         <div className="basis-1/3 my-auto mr-5">
           <img src="/ceo_photo.jpg" className="border-4 border-gray-300"/>
+          <p className="img-font">代表:菅澤一貴</p>
         </div>
         <div className="flex flex-col gap-y-10 md:basis-2/3 ">
           {messageParts.map((value, index) => (
