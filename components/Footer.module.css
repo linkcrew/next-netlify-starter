@@ -19,11 +19,6 @@
 .sitemap {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
-}
-
-.sitemapSection {
-  margin: 0 20px;
 }
 
 .sitemapSection h4 {
@@ -32,9 +27,29 @@
 
 .sitemapSection ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+}
+
+.sitemapSection ul li {
+  padding: 0 10px;
 }
 
 .sitemapSection ul li a {
   text-decoration: none;
+}
+
+.sitemapSection ul li a {
+  text-decoration: none;
+}
+
+.outserver::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  background-image: url(../public/outserver.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 5px;
 }

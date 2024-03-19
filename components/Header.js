@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Header({ toggleDrawer }) {
   return (
-    <header className="flex justify-between sticky top-0 z-10 bg-neutral text-white p-4 h-20">
+    <header className="flex justify-between sticky top-0 bg-neutral text-white p-4 h-20 header-index">
       {/* コーポレートロゴ */}
       <nav className="flex items-center h-full">
         <a href="/" className="flex items-center h-full hover:text-gray-300">

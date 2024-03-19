@@ -18,7 +18,7 @@ export default function Thanks() {
       <SideMenu isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />
 
       <main className='mx-auto w-4/5'>
-        <div className="flex flex-col gap-y-40" >
+        <div className="flex flex-col gap-y-10" >
           <ResultGoogleForm />
         </div>
       </main>

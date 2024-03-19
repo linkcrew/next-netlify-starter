@@ -29,18 +29,18 @@ export default function SideMenu({ isOpen, setIsOpen }) {
         </button>
 
         <ul className="flex flex-col p-4">
-          <li className="mb-2 text-xl size-8">
-            <a href="/" onClick={() => setIsOpen(false)}>top</a>
-          </li>
-          <li className="mb-2 text-xl size-8">
-            <a href="/about" onClick={() => setIsOpen(false)}>about</a>
-          </li>
-          <li className="mb-2 text-xl size-8">
-            <a href="/services" onClick={() => setIsOpen(false)}>services</a>
-          </li>
-          <li className="mb-2 text-xl size-8">
-            <a href="/contact" onClick={() => setIsOpen(false)}>contact</a>
-          </li>
+          <a href="/" onClick={() => setIsOpen(false)}>
+            <li className="mb-2 text-xl size-8">top</li>
+          </a>
+          <a href="/about" onClick={() => setIsOpen(false)}>
+            <li className="mb-2 text-xl size-8">about</li>
+          </a>
+          <a href="/services" onClick={() => setIsOpen(false)}>
+            <li className="mb-2 text-xl size-8">services</li>
+          </a>
+          <a href="/contact" onClick={() => setIsOpen(false)}>
+            <li className="mb-2 text-xl size-8">contact</li>
+          </a>
           <li className="mb-2 text-xl size-8">
             <div className="flex flex-row gap-x-2">
               <a href="https://lin.ee/YEKMoqp" target="_blank" rel="noopener noreferrer">

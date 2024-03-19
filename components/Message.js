@@ -30,12 +30,13 @@ export default function Message() {
 
   return (
     <div className="flex flex-col gap-y-5">
-      <LinkCrewH2 title="CEOメッセージ" className="text-center mb-10"/>
+      <LinkCrewH2 title="代表メッセージ" className="text-center mb-10"/>
       <LinkCrewDiv title="LiNKCREWは、未経験者からキャリアアップを目指すエンジニアまで、全てのエンジニアに対して成長の機会を提供し、新しい可能性を切り拓くお手伝いをすることを使命としています。" />
       <LinkCrewDiv title="私たちの目指すビジョンは、IT業界が全ての才能を開花し、互いに学び合い、支え合う場所となることです。" />
       <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-5 mt-10 mb-20">
         <div className="basis-1/3 my-auto mr-5">
           <img src="/ceo_photo.jpg" className="border-4 border-gray-300"/>
+          <p className="img-font">代表:菅澤一貴</p>
         </div>
         <div className="flex flex-col gap-y-10 md:basis-2/3 ">
           {messageParts.map((value, index) => (
